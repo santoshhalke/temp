@@ -12,7 +12,7 @@ export default function ContactSection() {
         </p>
         <h2 className="text-5xl font-light text-gray-800 mb-6 mt-3">Contact us</h2>
         <p className="text-gray-600 mb-10">
-          We're here to help you with all your real estate needs. Whether you're looking to buy, sell, or invest, our team is ready to assist you.
+          We&rsquo;re here to help you with all your real estate needs. Whether you&rsquo;re looking to buy, sell, or invest, our team is ready to assist you.
         </p>
 
         <form className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -3,7 +3,7 @@ const careerData = [
   {
     id: "engineering",
     title: "Engineering & Development",
-    description: "We're building scalable tech to solve real-world problems. Join our team of engineers shaping the future.",
+    description: "We are building scalable tech to solve real-world problems. Join our team of engineers shaping the future.",
     image: "/images/career/sector1.webp",
     jobs: [
       {

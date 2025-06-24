@@ -8,7 +8,7 @@ const testimonials = [
   },
   {
     id: 2,
-    text: `"STARKEN's manufacturing precision and commitment to quality make them a trusted partner in our supply chain. Their mechatronics components and calibration services meet our stringent defence-grade standards."`,
+    text: `"STARKEN is manufacturing precision and commitment to quality make them a trusted partner in our supply chain. Their mechatronics components and calibration services meet our stringent defence-grade standards."`,
     name: "Head of Procurement, HAL",
     location: "Pune, India",
     image: "/images/testimonial_2.jpg",

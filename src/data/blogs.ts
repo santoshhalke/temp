@@ -137,7 +137,7 @@ const blogs = [
   {
     id: "first-time-seller-guide",
     category: "Selling",
-    title: "A first-time home seller's guide",
+    title: "A first-time home sellers guide",
     date: "May 18, 2024",
     readTime: "3 min",
     image: "/images/blog_14.jpg",

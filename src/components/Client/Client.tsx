@@ -1,6 +1,7 @@
 "use client";
 import { Home } from "lucide-react";
 import clients from "@/data/clients";
+import Image from "next/image";
 
 export default function ClientsPage() {
   return (
@@ -21,11 +22,14 @@ export default function ClientsPage() {
             key={index}
             className="border border-gray-200 rounded-md p-4 flex flex-col items-center h-40 justify-between"
           >
-            <img
-              src={client.image}
-              alt={client.name}
-              className="h-16 object-contain mb-2"
-            />
+            <div className="relative h-16 w-full mb-2">
+              <Image
+                src={client.image}
+                alt={client.name}
+                fill
+                className="object-contain"
+              />
+            </div>
             <p className="text-sm font-semibold text-center">{client.name}</p>
           </div>
         ))}

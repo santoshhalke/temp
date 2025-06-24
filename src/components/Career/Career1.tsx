@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useDragControls } from 'framer-motion';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
+import Image from 'next/image';
 
 const HeroCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -72,7 +73,7 @@ const HeroCarousel = () => {
           className="relative w-full h-full"
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
-          onDragEnd={(e, {offset}) => {
+          onDragEnd={(e, { offset }) => {
             if (offset.x > 100) {
               goToPrev();
             } else if (offset.x < -100) {
@@ -81,17 +82,20 @@ const HeroCarousel = () => {
           }}
           dragControls={controls}
         >
-          {/* Hero Image as img tag with lazy loading */}
-          <img
-            src={slides[currentIndex].image}
-            alt={`Slide ${currentIndex + 1}`}
-            loading="lazy"
-            className="absolute top-0 left-0 w-full h-full object-cover object-center select-none"
-          />
-          
+          {/* Hero Image using Next.js Image component */}
+          <div className="absolute top-0 left-0 w-full h-full">
+            <Image
+              src={slides[currentIndex].image}
+              alt={`Slide ${currentIndex + 1}`}
+              fill
+              className="object-cover object-center select-none"
+              priority
+            />
+          </div>
+
           {/* Text overlay */}
           <div className="absolute left-8 lg:left-25 bottom-1/4 md:bottom-1/3 bz-10 text-white">
-            <h1 className="text-2xl md:text-5xl font-bold mb-2  drop-shadow-4xl">
+            <h1 className="text-2xl md:text-5xl font-bold mb-2 drop-shadow-4xl">
               {slides[currentIndex].title}
             </h1>
             <p className="text-sm md:text-2xl font-semibold drop-shadow-lg">
@@ -101,16 +105,16 @@ const HeroCarousel = () => {
         </motion.div>
       </AnimatePresence>
 
-      {/* Navigation Arrows - Visible on all screens */}
-      <button 
+      {/* Navigation Arrows */}
+      <button
         onClick={goToPrev}
         className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-[#0080BF]/50 hover:bg-white rounded-full p-1 sm:p-2 z-10 transition-all duration-300 shadow-lg"
         aria-label="Previous slide"
       >
         <ArrowLeft className="h-4 w-4 sm:h-6 sm:w-6 text-white hover:text-[#0080BF]/50 stroke-[3]" />
       </button>
-      
-      <button 
+
+      <button
         onClick={goToNext}
         className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-[#0080BF]/50 hover:bg-white rounded-full p-1 sm:p-2 z-10 transition-all duration-300 shadow-lg"
         aria-label="Next slide"
@@ -118,7 +122,7 @@ const HeroCarousel = () => {
         <ArrowRight className="h-4 w-4 sm:h-6 sm:w-6 text-white hover:text-[#0080BF]/50 stroke-[3]" />
       </button>
 
-      {/* Indicators - Smaller on mobile */}
+      {/* Indicators */}
       <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
         {slides.map((_, index) => (
           <button

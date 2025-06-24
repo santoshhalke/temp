@@ -1,5 +1,6 @@
 'use client';
 import { Home } from 'lucide-react';
+import Image from 'next/image';
 
 const certifications = [
   {
@@ -39,11 +40,12 @@ export default function CertificationSection() {
             key={index}
             className="border border-gray-200 p-6 text-center bg-white shadow-sm hover:shadow-md transition"
           >
-            <div className="w-full h-40 mb-4 flex items-center justify-center">
-              <img
+            <div className="w-full h-40 mb-4 flex items-center justify-center relative">
+              <Image
                 src={cert.image}
                 alt={cert.title}
-                className="max-h-full max-w-full object-contain"
+                fill
+                className="object-contain"
               />
             </div>
             <h3 className="text-lg font-semibold text-gray-800 mb-1">{cert.title}</h3>

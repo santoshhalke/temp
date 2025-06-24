@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import blogs from "@/data/blogs";
 import { Home } from "lucide-react";
+import Image from "next/image";
 
 const BLOGS_PER_PAGE = 6;
 
@@ -29,11 +30,12 @@ export default function Blog1() {
             <div className="border border-gray-200 p-4 cursor-pointer transition overflow-hidden h-full flex flex-col justify-between">
               <div>
                 <p className="text-sm text-gray-500 mb-2">{blog.category}</p>
-                <div className="overflow-hidden">
-                  <img
+                <div className="overflow-hidden relative w-full h-60">
+                  <Image
                     src={blog.image}
                     alt={blog.title}
-                    className="object-cover w-full h-60 transform transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    className="object-cover transform transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <h3 className="mt-4 text-lg font-semibold line-clamp-2 h-14">

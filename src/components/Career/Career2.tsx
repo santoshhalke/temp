@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import careerData from "@/data/careerData";
+import Image from "next/image";
 
 type Company = {
   id: string;
@@ -79,11 +80,12 @@ export default function CareerPage() {
               index % 2 !== 0 ? "md:flex-row-reverse" : ""
             }`}
           >
-            <div className="md:w-1/2 w-full">
-              <img
+            <div className="md:w-1/2 w-full h-64 relative">
+              <Image
                 src={sector.image}
                 alt={sector.title}
-                className="w-full h-64 object-cover"
+                fill
+                className="object-cover"
               />
             </div>
             <div className="md:w-1/2 w-full">

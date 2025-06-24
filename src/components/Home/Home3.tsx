@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const IntroWithImage = () => {
   return (
@@ -31,12 +32,12 @@ const IntroWithImage = () => {
       </div>
 
       {/* Right Section */}
-      <div className="lg:w-1/2 flex flex-col">
-        {/* Image */}
-        <img
+      <div className="lg:w-1/2 flex flex-col relative h-80 lg:h-auto">
+        <Image
           src="/home/HomeImage.webp"
           alt="Team Working"
-          className="w-full h-100 object-cover"
+          fill
+          className="object-cover"
         />
       </div>
     </div>

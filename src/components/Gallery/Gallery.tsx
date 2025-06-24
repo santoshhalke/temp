@@ -1,5 +1,6 @@
 'use client';
 import { Home } from 'lucide-react';
+import Image from 'next/image';
 
 const galleryImages = [
   "/gallery/gallery_1.png",
@@ -25,11 +26,12 @@ export default function GallerySection() {
       {/* Masonry-style Grid */}
       <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
         {galleryImages.map((img, index) => (
-          <div key={index} className="break-inside-avoid overflow-hidden rounded-lg">
-            <img
+          <div key={index} className="break-inside-avoid overflow-hidden rounded-lg relative w-full h-auto aspect-[3/2]">
+            <Image
               src={img}
               alt={`Gallery Image ${index + 1}`}
-              className="w-full object-cover rounded-lg transition duration-500 hover:scale-105"
+              fill
+              className="object-cover rounded-lg transition duration-500 hover:scale-105"
             />
           </div>
         ))}

@@ -1,6 +1,7 @@
 "use client";
 import { Building2, Briefcase } from "lucide-react";
 import groups from "@/data/groups";
+import Image from "next/image";
 
 export default function CompaniesPage() {
   return (
@@ -28,22 +29,23 @@ export default function CompaniesPage() {
                   key={idx}
                   className="border border-gray-200 rounded-md flex flex-col items-center h-90 justify-between bg-white shadow-sm hover:shadow-md transition"
                 >
-                  <div className="w-full h-[80%] mb-2 flex items-center justify-center">
-                    <img
+                  <div className="w-full h-[80%] mb-2 flex items-center justify-center relative">
+                    <Image
                       src={company.logo}
                       alt={company.name}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
                   </div>
 
-                <div className="p-3">
-                  <p className="text-2xl font-semibold text-center">
-                    {company.name}
-                  </p>
-                  <p className="text-xs text-gray-500 text-center">
-                    {company.tagline}
-                  </p>
-                </div>
+                  <div className="p-3">
+                    <p className="text-2xl font-semibold text-center">
+                      {company.name}
+                    </p>
+                    <p className="text-xs text-gray-500 text-center">
+                      {company.tagline}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>

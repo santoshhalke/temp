@@ -1,4 +1,5 @@
 import { Home } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutSection() {
   return (
@@ -10,11 +11,14 @@ export default function AboutSection() {
           <span>Who we are</span>
         </div>
         <h1 className="text-5xl mb-10">About us</h1>
-        <img
-          src="/about/founder.webp"
-          alt="About section"
-          className="w-full h-auto object-cover"
-        />
+        <div className="relative w-full h-[400px]">
+          <Image
+            src="/about/founder.webp"
+            alt="About section"
+            fill
+            className="object-cover"
+          />
+        </div>
       </div>
 
       {/* Right: Content */}

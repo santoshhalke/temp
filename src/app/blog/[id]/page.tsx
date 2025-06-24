@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function BlogDetails({ params }: { params: { id: string } }) {
   const { id } = params;
-  const blog = id;
+  const blog = blogs.find((b) => b.id === id);
 
   if (!blog) return notFound();
 

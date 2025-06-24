@@ -5,9 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function BlogDetails({
-  params,
-}: {
-  params: { id: string };
+  params
 }) {
   const blog = blogs.find((b) => b.id === params.id);
 

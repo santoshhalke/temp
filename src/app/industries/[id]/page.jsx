@@ -3,10 +3,10 @@ import industryDetails from "@/data/industryDetails";
 import industries from "@/data/industries";
 import {Home} from "lucide-react";
 
-export default function IndustryDetailPage({ params }: { params: { id: string } }) {
+export default function IndustryDetailPage({ params }) {
   const industryId = params.id;
   const sector = industries.find((ind) => ind.id === industryId);
-  const companies = industryDetails[industryId as keyof typeof industryDetails];
+  const companies = industryDetails[industryId];
 
   if (!sector) return notFound();
 

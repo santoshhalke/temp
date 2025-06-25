@@ -7,7 +7,7 @@ const properties = [
     baths: 4,
     area: "4,200 sq. ft.",
     tag: "For Sale",
-    image: "/images/trial_1.jpg",
+    image: "/industries/mechanical.webp",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const properties = [
     baths: 2,
     area: "2,100 sq. ft.",
     tag: "For Rent",
-    image: "/images/trial_2.jpg",
+    image: "/industries/mechatronics.png",
   },
   {
     id: 3,
@@ -27,9 +27,8 @@ const properties = [
     baths: 3,
     area: "3,800 sq. ft.",
     tag: "For Sale",
-    image: "/images/trial_3.jpg",
-  },
-  // Add as many as needed
+    image: "/industries/real-estate.png",
+  }
 ];
 
 export default properties;

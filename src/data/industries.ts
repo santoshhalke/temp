@@ -1,46 +1,46 @@
-const industries = [
+const companies = [
   {
     id: "manufacturing",
     title: "Manufacturing",
-    icon: "/icons/manufacturing.png",
+    icon: "/companies/manufacturing_1.webp",
     description: "Discover our industrial units and factory capabilities.",
   },
   {
     id: "trading",
     title: "Trading",
-    icon: "/icons/trading.png",
+    icon: "/companies/trading.webp",
     description: "Know our extensive trading operations across regions.",
   },
   {
     id: "services",
     title: "Services",
-    icon: "/icons/services.png",
+    icon: "/companies/mech.webp",
     description: "See the range of services we offer across sectors.",
   },
   {
     id: "construction",
     title: "Construction",
-    icon: "/icons/domain.png",
+    icon: "/companies/construction_2.webp",
     description: "Explore our range of registered domains and online assets.",
   },
   {
     id: "defence",
     title: "Defence",
-    icon: "/icons/domain.png",
+    icon: "/companies/defence.webp",
     description: "Explore our range of registered domains and online assets.",
   },
   {
     id: "automobile",
     title: "Automobile",
-    icon: "/icons/domain.png",
+    icon: "/companies/automobile.webp",
     description: "Explore our range of registered domains and online assets.",
   },
   {
     id: "mechatronics",
     title: "Mechatronics",
-    icon: "/icons/domain.png",
+    icon: "/companies/manufacturing_2.webp",
     description: "Explore our range of registered domains and online assets.",
   },
 ];
 
-export default industries;
+export default companies;

@@ -1,7 +1,7 @@
 "use client";
 import industries from "@/data/industries";
 import Link from "next/link";
-import { Home } from 'lucide-react';
+import { Home } from "lucide-react";
 import Image from "next/image";
 
 export default function IndustriesPage() {
@@ -16,16 +16,19 @@ export default function IndustriesPage() {
         {industries.map((industry) => (
           <Link key={industry.id} href={`/industries/${industry.id}`}>
             <div className="border p-6 rounded-xl text-center hover:shadow-lg transition bg-white">
-              <div className="relative w-16 h-16 mx-auto mb-4">
+              <div className="relative w-full h-40 mb-4">
                 <Image
                   src={industry.icon}
                   alt={industry.title}
                   fill
-                  className="object-contain"
+                  className="object-cover rounded-lg"
                 />
               </div>
+
               <h3 className="text-lg font-semibold">{industry.title}</h3>
-              <p className="text-sm text-gray-600 mt-2">{industry.description}</p>
+              <p className="text-sm text-gray-600 mt-2">
+                {industry.description}
+              </p>
             </div>
           </Link>
         ))}

@@ -3,19 +3,19 @@ import PropertyCard from "@/sections/PropertyCard";
 
 const properties = [
   {
-    image: "/images/featured_image_1.png",
+    image: "/home/featured_1.png",
     title: "Golden Bay Penthouse",
   },
   {
-    image: "/images/featured_image_2.png",
+    image: "/home/featured_2.png",
     title: "Riverbend Estates",
   },
   {
-    image: "/images/featured_image_3.png",
+    image: "/home/featured_3.png",
     title: "Maple Grove Cottage",
   },
   {
-    image: "/images/featured_image_4.png",
+    image: "/home/featured_4.png",
     title: "Luxury Heights Mansion",
   },
 ];

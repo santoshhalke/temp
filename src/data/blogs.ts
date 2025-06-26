@@ -5,7 +5,7 @@ const blogs = [
     title: "Mastering real estate negotiations tips for buyers and sellers",
     date: "Dec 18, 2024",
     readTime: "2 min",
-    image: "/images/blog_1.jpg",
+    image: "/blogs/blog_1.png",
     content: `Full blog content for negotiation tips...`
   },
   {
@@ -14,7 +14,7 @@ const blogs = [
     title: "5 essential questions to ask before choosing a real estate agent",
     date: "Dec 18, 2024",
     readTime: "5 min",
-    image: "/images/blog_2.jpg",
+    image: "/blogs/blog_2.png",
     content: `Full blog content for agent questions...`
   },
   {
@@ -23,7 +23,7 @@ const blogs = [
     title: "How location impacts property value insights buyer needs to know",
     date: "Dec 18, 2024",
     readTime: "6 min",
-    image: "/images/blog_3.jpg",
+    image: "/blogs/blog_3.png",
     content: `Full blog content for location impact...`
   },
   {
@@ -32,7 +32,7 @@ const blogs = [
     title: "Home staging secrets to sell faster",
     date: "Nov 30, 2024",
     readTime: "3 min",
-    image: "/images/blog_2.jpg",
+    image: "/blogs/blog_2.png",
     content: `Full blog content for home staging secrets...`
   },
   {
@@ -41,7 +41,7 @@ const blogs = [
     title: "Real estate investing for beginners: A guide",
     date: "Nov 10, 2024",
     readTime: "4 min",
-    image: "/images/blog_3.jpg",
+    image: "/blogs/blog_3.png",
     content: `Full blog content for real estate investing...`
   },
   {
@@ -50,7 +50,7 @@ const blogs = [
     title: "Mortgage tips every first-time home buyer should know",
     date: "Oct 25, 2024",
     readTime: "3 min",
-    image: "/images/blog_4.jpg",
+    image: "/blogs/blog_4.png",
     content: `Full blog content for mortgage tips...`
   },
   {
@@ -59,7 +59,7 @@ const blogs = [
     title: "Top sustainable housing trends in 2025",
     date: "Oct 10, 2024",
     readTime: "2 min",
-    image: "/images/blog_5.jpg",
+    image: "/blogs/blog_5.png",
     content: `Full blog content for sustainable housing...`
   },
   {
@@ -68,7 +68,7 @@ const blogs = [
     title: "Top 5 mistakes to avoid when buying your first home",
     date: "Sep 28, 2024",
     readTime: "3 min",
-    image: "/images/blog_6.jpg",
+    image: "/blogs/blog_6.png",
     content: `Full blog content for home buying mistakes...`
   },
   {
@@ -77,7 +77,7 @@ const blogs = [
     title: "Property inspection checklist before buying a home",
     date: "Sep 15, 2024",
     readTime: "2 min",
-    image: "/images/blog_7.jpg",
+    image: "/blogs/blog_7.png",
     content: `Full blog content for property inspection checklist...`
   },
   {
@@ -86,7 +86,7 @@ const blogs = [
     title: "Urban vs Suburban: Which lifestyle suits you?",
     date: "Aug 30, 2024",
     readTime: "2 min",
-    image: "/images/blog_8.jpg",
+    image: "/blogs/blog_8.png",
     content: `Full blog content for urban vs suburban living...`
   },
   {
@@ -95,7 +95,7 @@ const blogs = [
     title: "How to prepare your home for sale in 2025",
     date: "Aug 15, 2024",
     readTime: "3 min",
-    image: "/images/blog_9.jpg",
+    image: "/blogs/blog_9.png",
     content: `Full blog content for preparing home for sale...`
   },
   {
@@ -104,7 +104,7 @@ const blogs = [
     title: "Interior design trends that boost property value",
     date: "Jul 28, 2024",
     readTime: "2 min",
-    image: "/images/blog_10.jpg",
+    image: "/blogs/blog_10.png",
     content: `Full blog content for interior design trends...`
   },
   {
@@ -113,7 +113,7 @@ const blogs = [
     title: "Why hiring a real estate agent pays off",
     date: "Jul 10, 2024",
     readTime: "3 min",
-    image: "/images/blog_11.jpg",
+    image: "/blogs/blog_11.png",
     content: `Full blog content for benefits of hiring an agent...`
   },
   {
@@ -122,7 +122,7 @@ const blogs = [
     title: "Renting vs Buying: Which is right for you?",
     date: "Jun 20, 2024",
     readTime: "2 min",
-    image: "/images/blog_12.jpg",
+    image: "/blogs/blog_12.png",
     content: `Full blog content for renting vs buying...`
   },
   {
@@ -131,7 +131,7 @@ const blogs = [
     title: "Luxury home trends defining 2025",
     date: "Jun 05, 2024",
     readTime: "2 min",
-    image: "/images/blog_13.jpg",
+    image: "/blogs/blog_13.png",
     content: `Full blog content for luxury home trends...`
   },
   {
@@ -140,7 +140,7 @@ const blogs = [
     title: "A first-time home sellers guide",
     date: "May 18, 2024",
     readTime: "3 min",
-    image: "/images/blog_14.jpg",
+    image: "/blogs/blog_14.png",
     content: `Full blog content for first-time seller guide...`
   },
   {
@@ -149,7 +149,7 @@ const blogs = [
     title: "How to correctly value your property",
     date: "May 01, 2024",
     readTime: "3 min",
-    image: "/images/blog_15.jpg",
+    image: "/blogs/blog_15.png",
     content: `Full blog content for property valuation...`
   },
   {
@@ -158,7 +158,7 @@ const blogs = [
     title: "Understanding property tax before buying",
     date: "Apr 15, 2024",
     readTime: "2 min",
-    image: "/images/blog_16.jpg",
+    image: "/blogs/blog_16.png",
     content: `Full blog content for understanding property tax...`
   },
   {
@@ -167,7 +167,7 @@ const blogs = [
     title: "Top tips to host a successful open house",
     date: "Apr 01, 2024",
     readTime: "2 min",
-    image: "/images/blog_17.jpg",
+    image: "/blogs/blog_17.png",
     content: `Full blog content for open house tips...`
   },
   {
@@ -176,7 +176,7 @@ const blogs = [
     title: "Essential real estate terms you should know",
     date: "Mar 18, 2024",
     readTime: "4 min",
-    image: "/images/blog_18.jpg",
+    image: "/blogs/blog_18.png",
     content: `Full blog content for real estate glossary...`
   },
   {
@@ -185,7 +185,7 @@ const blogs = [
     title: "Home maintenance checklist for new buyers",
     date: "Mar 01, 2024",
     readTime: "3 min",
-    image: "/images/blog_19.jpg",
+    image: "/blogs/blog_19.png",
     content: `Full blog content for home maintenance checklist...`
   },
   {
@@ -194,7 +194,7 @@ const blogs = [
     title: "How technology is reshaping real estate in 2025",
     date: "Feb 20, 2024",
     readTime: "3 min",
-    image: "/images/blog_20.jpg",
+    image: "/blogs/blog_20.png",
     content: `Full blog content for tech trends in real estate...`
   }
 ];
